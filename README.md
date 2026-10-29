@@ -43,6 +43,16 @@ A script that fits in one file is easy to audit, easy to paste into a container,
 and impossible to break with a botched dependency upgrade. When a tool here
 grows past a few hundred lines, it gets its own repository.
 
+## Roadmap
+
+- [ ] `--json` output, so results can be piped into other tools
+- [ ] `--exclude` globs for generated or vendored files
+- [ ] stdin mode: `cat file | python linecount.py -`
+- [ ] respect `.gitignore` when scanning a repository
+
+Suggestions are welcome through Issues. If a tool here grows a second file, it
+gets promoted to its own repository.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
